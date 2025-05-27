@@ -1,0 +1,17 @@
+name: generate ops documentation
+on:
+  push:
+      paths:
+          - '.github/workflows/opDocumentationGenerator.yaml'
+  schedule:
+      - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+jobs:
+    setup_and_build:
+        name: a
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install SSH key
+              run: |
+                echo a
