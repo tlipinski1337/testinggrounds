@@ -2,7 +2,7 @@ name: generate ops documentation
 on:
   push:
       paths:
-          - '.github/workflows/opDocumentationGenerator.yaml'
+          - .github/workflows/opDocumentationGenerator.yaml
   schedule:
       - cron: '0 0 1 * *'
   workflow_dispatch:
